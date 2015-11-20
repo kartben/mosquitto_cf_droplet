@@ -1,0 +1,9 @@
+---
+applications:
+- name: mosquitto-app
+  memory: 1024M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/binary-buildpack.git
+  host: mosquitto-app
+  env: 
+  	BRIDGE_ADDR: iot.eclipse.org
