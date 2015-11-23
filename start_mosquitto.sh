@@ -22,7 +22,7 @@ else
 listener $PORT
 
 connection main-broker
-address iot.eclipse.org
+address $BRIDGE_ADDR
 bridge_protocol_version mqttv311
 topic # both 2
 
